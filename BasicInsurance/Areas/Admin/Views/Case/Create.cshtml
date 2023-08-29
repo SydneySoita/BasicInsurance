@@ -1,0 +1,70 @@
+﻿@using BasicInsurance.Models.Models;
+@model Undewritingcase  
+
+<form method="post">
+    <div class="border p-3 et-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Create Case</h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="ModelOnly"></div>
+        <div class="mb-3" row p-1>
+            <label asp-for="ApplicantName"></label>
+            <input asp-for="ApplicantName" class="form-control" />
+            <span asp-validation-for="ApplicantName" class="text-bg-danger"></span>
+        </div>
+        <div class="mb-3" row p-1>
+            <label asp-for="Policytype"></label>
+            <input asp-for="Policytype" class="form-control" />
+            <span asp-validation-for="Policytype" class="text-bg-danger"></span>
+        </div>
+        <div class="mb-3" row p-1>
+            <label asp-for="RiskDescription"></label>
+            <textarea asp-for="RiskDescription" class="form-control"></textarea>
+            <span asp-validation-for="RiskDescription" class="text-bg-danger"></span>
+        </div>
+        <div class="mb-3" row p-1>
+            <label asp-for="CoverageAmount"></label>
+            <input asp-for="CoverageAmount" class="form-control"></input>
+            <span asp-validation-for="CoverageAmount" class="text-bg-danger"></span>
+        </div>
+        <div class="mb-3" row p-1>
+            <label asp-for="PaymentFrequency"></label>
+            <textarea asp-for="PaymentFrequency" class="form-control"></textarea>
+            <span asp-validation-for="PaymentFrequency" class="text-bg-danger"></span>
+        </div>
+        <div class="mb-3" row p-1>
+            <label asp-for="Age"></label>
+            <input asp-for="Age" class="form-control"></input>
+            <span asp-validation-for="Age" class="text-bg-danger"></span>
+        </div>
+        <div class="mb-3" row p-1>
+            <label asp-for="HealthCondition"></label>
+            <textarea asp-for="HealthCondition" class="form-control"></textarea>
+            <span asp-validation-for="HealthCondition" class="text-bg-danger"></span>
+        </div>
+        <div class="mb-3" row p-1>
+            <label asp-for="Accidents"></label>
+            <input asp-for="Accidents" class="form-control"></input>
+            <span asp-validation-for="Accidents" class="text-bg-danger"></span>
+        </div>
+
+    
+        <div class="row">
+            <div class="col-6" col-md-3>
+                <button type="submit" class="btn btn-primary form-control">Create Case</button>
+            </div>
+            <div class="col-6" col-md-3>
+                <a asp-controller="Case" asp-action="Index" class="btn btn-outline-secondary form-control">Back To List</a>
+            </div>
+        </div>
+
+    </div>
+    
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}

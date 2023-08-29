@@ -1,0 +1,74 @@
+﻿@using BasicInsurance.Models.Models;
+@model List<Undewritingcase>
+
+
+<div class="container">
+    <div class="row pt-4 pb-3">
+        <div class="col-6">
+            <h2 class="text-primary">
+                Cases List
+            </h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Case" asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> Create New Case
+            </a>
+        </div>
+    </div>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>
+                    Applicant Name
+                </th>
+                <th>
+                    Policy Type
+                </th>
+                <th>
+                    Risk Description
+                </th>
+                <th>
+                    Age
+                </th>
+                <th>
+                    Health Condition
+                </th>
+                <th>
+                    Accidents
+                </th>
+                <th>
+                    Risk Level
+                </th>
+                <th>
+                    Premium Amount
+                </th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            @foreach (var obj in Model.OrderBy(u => u.Age))
+            {
+                <tr>
+                    <td>@obj.ApplicantName</td>
+                    <td>@obj.Policytype</td>
+                    <td>@obj.RiskDescription</td>
+                    <td>@obj.Age</td>
+                    <td>@obj.HealthCondition</td>
+                    <td>@obj.Accidents</td>
+                    <td>@obj.RiskResult</td>
+                    <td>@obj.PremiumAmount</td>
+                    <td>
+                         <div class="btn-group" role="group">
+                            <a asp-controller="Case" asp-action="Edit" asp-route-Id="@obj.Id" class="btn btn-primary mx-2">
+                                <i class="bi bi-pencil-square"></i>
+                            </a>
+                            <a asp-controller="Case" asp-action="Delete" asp-route-Id="@obj.Id" class="btn btn-danger mx-2">
+                                <i class="bi bi-trash3-fill"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

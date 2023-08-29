@@ -1,0 +1,12 @@
+C:\Users\SoftClansIntern\source\repos\BasicInsurance\BasicInsurance.Models\bin\Debug\net6.0\BasicInsurance.Models.deps.json
+C:\Users\SoftClansIntern\source\repos\BasicInsurance\BasicInsurance.Models\bin\Debug\net6.0\BasicInsurance.Models.dll
+C:\Users\SoftClansIntern\source\repos\BasicInsurance\BasicInsurance.Models\bin\Debug\net6.0\BasicInsurance.Models.pdb
+C:\Users\SoftClansIntern\source\repos\BasicInsurance\BasicInsurance.Models\obj\Debug\net6.0\BasicInsurance.Models.csproj.AssemblyReference.cache
+C:\Users\SoftClansIntern\source\repos\BasicInsurance\BasicInsurance.Models\obj\Debug\net6.0\BasicInsurance.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SoftClansIntern\source\repos\BasicInsurance\BasicInsurance.Models\obj\Debug\net6.0\BasicInsurance.Models.AssemblyInfoInputs.cache
+C:\Users\SoftClansIntern\source\repos\BasicInsurance\BasicInsurance.Models\obj\Debug\net6.0\BasicInsurance.Models.AssemblyInfo.cs
+C:\Users\SoftClansIntern\source\repos\BasicInsurance\BasicInsurance.Models\obj\Debug\net6.0\BasicInsurance.Models.csproj.CoreCompileInputs.cache
+C:\Users\SoftClansIntern\source\repos\BasicInsurance\BasicInsurance.Models\obj\Debug\net6.0\BasicInsurance.Models.dll
+C:\Users\SoftClansIntern\source\repos\BasicInsurance\BasicInsurance.Models\obj\Debug\net6.0\refint\BasicInsurance.Models.dll
+C:\Users\SoftClansIntern\source\repos\BasicInsurance\BasicInsurance.Models\obj\Debug\net6.0\BasicInsurance.Models.pdb
+C:\Users\SoftClansIntern\source\repos\BasicInsurance\BasicInsurance.Models\obj\Debug\net6.0\ref\BasicInsurance.Models.dll
