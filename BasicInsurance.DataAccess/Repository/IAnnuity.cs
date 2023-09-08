@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BasicInsurance.Models.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,11 +7,9 @@ using System.Threading.Tasks;
 
 namespace BasicInsurance.DataAccess.Repository
 {
-    public interface IUnitofwork
+    public interface IAnnuityRepository : IRepository<Annuity>
     {
-        IUnderwritingcaseRepository Underwritingcase { get; set; }
-        IAnnuityRepository Annuity { get; set; }
-
+        void Update(Annuity obj);
         void Save();
     }
 }

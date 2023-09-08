@@ -11,7 +11,8 @@ namespace BasicInsurance.DataAccess.Data
     public class ApplicationDbContext:DbContext
     {
         public DbSet<Undewritingcase> Undewritingcases { get; set; }
-    
+        public DbSet<Annuity> Annuity { get; set; }
+
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {

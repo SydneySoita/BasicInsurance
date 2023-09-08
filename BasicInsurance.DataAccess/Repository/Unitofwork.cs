@@ -11,11 +11,13 @@ namespace BasicInsurance.DataAccess.Repository
     {
         private ApplicationDbContext _db;
         public IUnderwritingcaseRepository Underwritingcase { get; set; }
+        public IAnnuityRepository Annuity { get; set; }
 
         public Unitofwork(ApplicationDbContext db)
         {
             _db = db;
             Underwritingcase = new UnderwritingcaseRepository(_db);
+            Annuity = new AnnuityRepository(_db);
         }
 
         public void Save()
